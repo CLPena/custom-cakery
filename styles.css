@@ -1,8 +1,8 @@
 /********************************* NATIVE ELS & GENERAL STYLES *********************************/
 
 html, body {
-  color: #576574;
-  font-size: 14px;
+  color: #000000;
+  font-size: 1.25em;
   margin: 0;
   font-family: 'Josefin Slab', serif;
   display: flex;
@@ -22,8 +22,8 @@ body.modal-active::after {
 }
 
 a {
-  color: #576574;
-  text-decoration: none;
+  color: #000000;
+  text-decoration: underline;
 }
 
 form {
@@ -60,6 +60,9 @@ h4 {
   text-align: center;
 }
 
+h5 {
+  font-size: 1.5em;
+}
 .description-text {
   max-width: 500px;
 }
@@ -82,6 +85,7 @@ h4 {
   position: absolute;
   top: 10px;
   left: 10px;
+  color: #ffffff;
 }
 
 .close {
@@ -124,7 +128,7 @@ h4 {
 /********************************* FOOTER *********************************/
 
 .footer {
-  background-color: #ffcccc;
+  background-color: #ffdbdb;
   padding: 20px 0;
   text-align: center;
   height: 50px;
@@ -219,14 +223,14 @@ h4 {
 }
 
 .medium-image {
-  border: dotted 20px #ffcccc;
+  border: dotted 20px #ffdbdb;
   display: block;
   width: 600px;
 }
 
 .subtext {
-  color: #95a5a6;
-  font-size: 10px;
+  color: #000000;
+  font-size: 1em;
 }
 
 .margin-top--small {

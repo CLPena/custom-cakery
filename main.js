@@ -25,6 +25,13 @@ if (document.querySelector("#landing")) {
     window.location.href = 'order.html'
   })
 }
+if (document.querySelector("#landing")) {
+  document.querySelector("#landing").addEventListener("keypress", function (e) {
+    if (e.key === 'Enter') {
+      window.location.href = 'order.html'
+    }
+  });
+}
 
 /********************************* ORDER PAGE *********************************/
 
@@ -48,7 +55,7 @@ if (document.querySelector("#order")) {
 
   document.querySelector(".modal-button").addEventListener("click", () => {
     if (document.querySelector(".modal-email-field").value) {
-      document.querySelector(".modal-content").innerHTML = 
+      document.querySelector(".modal-content").innerHTML =
       "<h3>Your coupon code is <span class='green'>cakelovers</span></h3>"
     }
   })

@@ -26,10 +26,6 @@ a {
   text-decoration: none;
 }
 
-a:focus {
-  outline: none !important;
-}
-
 form {
   background-color: rgba(255, 255, 255, .7);
   margin-bottom: 25px;
@@ -40,10 +36,6 @@ form {
 
 input[type="text"], input[type="number"], textarea {
   width: 100%;
-}
-
-input:focus {
-  outline: none!important;
 }
 
 button {

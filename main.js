@@ -25,8 +25,8 @@ if (document.querySelector("#landing")) {
     window.location.href = 'order.html'
   })
 }
-if (document.querySelector("#landing")) {
-  document.querySelector("#landing").addEventListener("keypress", function (e) {
+if (document.querySelector("#landing") && document.querySelector("#landing").focus) {
+  document.querySelector(".landing-image").addEventListener("keypress", function (e) {
     if (e.key === 'Enter') {
       window.location.href = 'order.html'
     }

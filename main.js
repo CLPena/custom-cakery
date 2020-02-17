@@ -46,11 +46,17 @@ if (document.querySelector("#order")) {
   const hideModal = () => {
    modal.classList.remove("active")
    body.classList.remove("modal-active")
+   modal.setAttribute("aria-hidden", "true")
+   body.setAttribute("aria-hidden", "false")
   }
 
   const showModal = () => {
     modal.classList.add("active")
     body.classList.add("modal-active")
+    modal.setAttribute("aria-hidden", "false")
+    body.setAttribute("aria-hidden", "true")
+    // need something here to disable tabbing outside of modal
+    // document.querySelector("form").setAttribute("tabindex", "-1")
   }
 
   document.querySelector(".modal-button").addEventListener("click", () => {
